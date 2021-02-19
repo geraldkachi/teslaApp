@@ -1,8 +1,10 @@
 import React from "react";
-import { StyleSheet, Text, View, ImageBackground } from "react-native";
+import { StyleSheet, Text, View, ImageBackground, Dimensions } from "react-native";
 import TeslsaBtn from "../teslabtn/TeslsaBtn";
 
-const CarItem = ({ name, tagline, image, taglineCTA }) => {
+const CarItem = ({car}) => {
+
+    const { name, tagline, image, taglineCTA } = car
   return (
     <View style={styles.container}>
       <ImageBackground source={image} style={styles.image}>
@@ -26,9 +28,7 @@ const CarItem = ({ name, tagline, image, taglineCTA }) => {
           <TeslsaBtn
             type="secondary"
             content="Exisiting Inventory"
-            onPress={() =>
-              console.warn("you don press Exisiting Inventory abi")
-            }
+            onPress={() => console.warn("you don press Exisiting Inventory abi")}
           />
         </View>
       </ImageBackground>
@@ -49,11 +49,11 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
     resizeMode: "cover",
-    position: "absolute",
+    // position: "absolute",
   },
   carContainer: {
     width: "100%",
-    height: "100%",
+    height: Dimensions.get('window').height,
   },
   titles: {
     marginTop: "30%",
