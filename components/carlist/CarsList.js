@@ -2,11 +2,13 @@ import React from "react";
 import { StyleSheet, View, FlatList,Dimensions } from "react-native";
 import CarItem from "../cariitem/CarItem";
 import cars from "../carsdata/carsdata";
+import Header from "../header/Header";
 
 const CarsList = () => {
     // console.log(cars);
   return (
     <View style={styles.container}>
+      <Header />
       <FlatList
         data={cars}
         renderItem={({ item }) => <CarItem car={item} />}

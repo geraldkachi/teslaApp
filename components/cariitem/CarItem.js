@@ -1,8 +1,13 @@
 import React from "react";
 import { StyleSheet, Text, View, ImageBackground, Dimensions } from "react-native";
 import TeslsaBtn from "../teslabtn/TeslsaBtn";
+import { useNavigation } from "@react-navigation/native"
+// import { useIsDrawerOpen } from "@react-navigation/drawer"
+
 
 const CarItem = ({car}) => {
+  const navigation = useNavigation()
+  // const isDrawerOpen = useIsDrawerOpen()
 
     const { name, tagline, image, taglineCTA } = car
   return (
@@ -23,7 +28,8 @@ const CarItem = ({car}) => {
           <TeslsaBtn
             type="primary"
             content="Custom Order"
-            onPress={() => console.warn("you don press Custom Order abi")}
+            // onPress={() => console.warn("you don press Custom Order abi")}
+            onPress={() => navigation.openDrawer()}
           />
           <TeslsaBtn
             type="secondary"

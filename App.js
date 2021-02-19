@@ -1,15 +1,13 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
+import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
-// import CarItem from "./components/cariitem/CarItem";
-import CarsList from "./components/carlist/CarsList";
+import RootNavigation from "./components/navigations/RootNavigation";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <CarsList />
-      {/* <CarItem /> */}
+      <RootNavigation />
     </View>
   );
 }
@@ -25,6 +23,6 @@ const styles = StyleSheet.create({
 
 
 // name={"Model X"}
-//         tagline={"Order Online for"}
-//         taglineCTA={"Touchless Delivery"}
-//         image={BackGrImg}
+// tagline={"Order Online for"}
+// taglineCTA={"Touchless Delivery"}
+// image={BackGrImg}
