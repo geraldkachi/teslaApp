@@ -1,11 +1,18 @@
 import React from "react";
-import { StyleSheet, Image, View } from "react-native";
+import { StyleSheet, Image, View, Pressable } from "react-native";
+import {useNavigation} from "@react-navigation/native"
 
 const Header = () => {
+    const navigation = useNavigation()
   return (
     <View style={styles.container}>
       <Image style={styles.logo} source={require("../../assets/images/logo.png")} />
-      <Image style={styles.menu} source={require("../../assets/images/menu.png")} />
+     <Pressable onPress={() => navigation.toggleDrawer()}>
+     <Image 
+      
+      
+       style={styles.menu} source={require("../../assets/images/menu.png")} />
+     </Pressable>
     </View>
   );
 };
