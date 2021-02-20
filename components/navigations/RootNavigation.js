@@ -21,3 +21,37 @@ const RootNavigation = () => {
 export default RootNavigation;
 
 const styles = StyleSheet.create({});
+
+
+// <NavigationContainer> 
+//  <Drawer.Navigator 
+//   drawerPosition="right" 
+//   drawerType="slide" initialRouteName="Home" 
+//   drawerContent={() => <SideBar />}>
+//    <Drawer.Screen name="Home" component={HomeScreen} /> 
+//    <Drawer.Screen name="NewIndex" component={NewIndex} /> 
+// </Drawer.Navigator>
+// </NavigationContainer>
+
+///////////////////////////////////////////
+// from navigation 5 project 
+
+// return (
+//   <PaperProvider theme={PaperDarkTheme}>
+//       <AuthContext.Provider value={authContext}>
+//           <NavigationContainer theme={DarkTheme}>
+//               { userToken !== null ? (
+//               <Drawer.Navigator drawerContent={props => <DrawerContent {...props} />} >
+//                   <Drawer.Screen name="HomeDrawer" component={RoutesTab}  />
+//                   <Drawer.Screen name="SupportScreen" component={SupportScreen}  />
+//                   <Drawer.Screen name="SettingsScreen" component={SettingsScreen} /> 
+//                   <Drawer.Screen name="BookmarkScreen" component={BookmarkScreen} /> 
+//                   <Drawer.Screen name="ProfileScreen" component={ProfileScreen} /> 
+//               </Drawer.Navigator>
+//               ) :
+//               <RootStackScreen />
+//               }
+//           </NavigationContainer>
+//       </AuthContext.Provider>
+//   </PaperProvider>
+//   )

@@ -8,10 +8,7 @@ const Header = () => {
     <View style={styles.container}>
       <Image style={styles.logo} source={require("../../assets/images/logo.png")} />
      <Pressable onPress={() => navigation.toggleDrawer()}>
-     <Image 
-      
-      
-       style={styles.menu} source={require("../../assets/images/menu.png")} />
+        <Image style={styles.menu} source={require("../../assets/images/menu.png")} />
      </Pressable>
     </View>
   );
