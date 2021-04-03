@@ -8,15 +8,12 @@ const Drawer = createDrawerNavigator();
 const RootNavigation = () => {
   return (
     <NavigationContainer>
-      <Drawer.Navigator 
-      initialRouteName="Home"
-      drawerPosition="right"
-      >
+      <Drawer.Navigator initialRouteName="Home" drawerPosition="right">
         <Drawer.Screen name="Home" component={CarsList} />
       </Drawer.Navigator>
     </NavigationContainer>
-  );
-};
+  )
+}
 
 export default RootNavigation;
 
