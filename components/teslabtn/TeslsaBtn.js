@@ -18,6 +18,7 @@ const TeslsaBtn = ({type, content, onPress}) => {
         </View>
     )
 }
+// 272004
 
 export default TeslsaBtn
 

@@ -81,6 +81,6 @@ const styles = StyleSheet.create({
   buttomContainer: {
     //   position: 'absolute',
     bottom: 150,
-    width: "100",
+    width: "100%",
   },
 });
