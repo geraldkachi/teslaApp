@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     top: 25,
     width: "100%",
     paddingHorizontal: 20,
-    zIndex: 100
+    zIndex: 1000
   },
   logo: {
     width: 100,

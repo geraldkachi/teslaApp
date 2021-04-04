@@ -10,9 +10,12 @@ const CarsList = () => {
     <View style={styles.container}>
       <Header />
       <FlatList
+        // ListHeaderComponent={Header}
         data={cars}
         renderItem={({ item }) => <CarItem car={item} />}
+        // renderItem({ item, index, separators })
         keyExtractor={(item) => item.id}
+        // ListFooterComponent={ListFooter}
         snapToAlignment='start'
         decelerationRate='fast'
         snapToInterval={Dimensions.get('window').height}
